@@ -42,10 +42,12 @@ Folder Structure
 ### Desktop View
 
 ![Desktop View](screenshotsDesktopview.png)
+![image](https://github.com/user-attachments/assets/e50b1ba0-5ce8-4c15-92d5-8635339e2b3f)
 
 ### Mobile View
 
 ![Mobile View](screenshots/Mobileview.png)
+![image](https://github.com/user-attachments/assets/637029ce-1ed0-409e-84b4-047cc3d49013)
 
 Usage
 Explain briefly how to use the app, for example:
@@ -79,4 +81,3 @@ Search & filtering: Add the ability to search messages and filter chats by user 
 Emoji and file attachments: Enable sending emojis, images, and files in chat.
 
 Animations and transitions: Further polish UI with subtle animations for smoother interactions.
-

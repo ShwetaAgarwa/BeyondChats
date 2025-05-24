@@ -48,6 +48,11 @@ Folder Structure
 
 ![Mobile View](screenshots/Mobileview.png)
 ![image](https://github.com/user-attachments/assets/637029ce-1ed0-409e-84b4-047cc3d49013)
+## Live Demo
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bdb4f1e5-4f61-49e0-b1db-405421ecee0e/deploy-status)](https://app.netlify.com/projects/snazzy-blancmange-8de322/deploys)
+
+Check out the live site here: [https://snazzy-blancmange-8de322.netlify.app](https://snazzy-blancmange-8de322.netlify.app)
 
 Usage
 Explain briefly how to use the app, for example:

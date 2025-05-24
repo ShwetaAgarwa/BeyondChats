@@ -1,0 +1,47 @@
+.sidebar {
+  width: 240px;
+  height: calc(100vh - 60px);  /* fits below the fixed header */
+  background-color: #2f3542;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 60px;                   /* push below header */
+  left: 0;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+/* Force sidebar closed on smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    top: 60px;                       /* same offset as header */
+    height: calc(100vh - 60px);      /* adjust for header */
+    z-index: 1000;
+  }
+}
+
+/* Ensure it stays open on desktop */
+@media (min-width: 769px) {
+  .sidebar {
+    transform: translateX(0) !important;
+  }
+}

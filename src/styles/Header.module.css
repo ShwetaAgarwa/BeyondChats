@@ -1,0 +1,61 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #fff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  z-index: 1100;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 15px;
+  color: #2f3542;
+  transition: color 0.3s ease;
+}
+
+.menuBtn:hover {
+  color: #57606f;
+}
+
+.profile {
+  font-weight: bold;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .menuBtn {
+    order: 1;
+    margin-right: 10px;
+  }
+
+  h3 {
+    order: 2;
+    flex: 1;
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .profile {
+    order: 3;
+    width: 100%;
+    text-align: left;
+    margin-top: 8px;
+  }
+}

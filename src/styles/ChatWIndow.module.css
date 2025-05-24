@@ -1,0 +1,79 @@
+.chatContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f1f2f6;
+  min-height: 0;
+}
+
+.chatBox {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.3s forwards;
+}
+
+.admin {
+  background-color: #74b9ff;
+  align-self: flex-start;
+  color: white;
+}
+
+.user {
+  background-color: #dfe6e9;
+  align-self: flex-end;
+}
+
+.inputBox {
+  display: flex;
+  gap: 10px;
+}
+
+.inputBox input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.inputBox button {
+  padding: 10px 15px;
+  background-color: #2f3542;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputBox button:hover {
+  background-color: #57606f;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .message {
+    max-width: 100%;
+  }
+}

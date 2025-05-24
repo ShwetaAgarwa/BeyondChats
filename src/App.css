@@ -1,0 +1,33 @@
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+/* Responsive wrap */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 240px; /* space for sidebar */
+  transition: margin-left 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.main.fullWidth {
+  margin-left: 0;
+}
+
+/* On small screens, main takes full width */
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+}
